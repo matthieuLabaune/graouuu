@@ -66,8 +66,6 @@ class User extends Authenticatable
      */
     public function graousFromFollowing(): HasManyThrough
     {
-        return $this->hasManyThrough(
-            Graou::class, Follower::class, 'user_id', 'user_id', 'id', 'following_id'
-        );
+        return $this->hasManyThrough(Graou::class, Follower::class, 'user_id', 'user_id', 'id', 'following_id');
     }
 }
