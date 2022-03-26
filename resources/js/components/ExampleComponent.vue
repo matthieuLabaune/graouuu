@@ -1,6 +1,10 @@
 <template>
-  <div>
- {{ user }}
+  <div class="container">
+    <div class="border border-red-300 rounded">
+      <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+    </div>
   </div>
 </template>
 

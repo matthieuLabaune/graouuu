@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        dd($request->user()->graousFromFollowing);
+//        dd($request->user()->graousFromFollowing);
 
         return view('home');
     }
