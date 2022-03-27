@@ -12,14 +12,15 @@ class UserResource extends JsonResource
     /**
      * Transform the resource into an array.
      *
-     * @param  Request  $request
+     * @param Request $request
      * @return array|Arrayable|JsonSerializable
      */
     public function toArray($request): array|JsonSerializable|Arrayable
     {
         return [
-               'username' => $this->username,
-               'name' => $this->name
-            ];
+            'username' => $this->username,
+            'name' => $this->name,
+            'avatar' => $this->avatar(),
+        ];
     }
 }

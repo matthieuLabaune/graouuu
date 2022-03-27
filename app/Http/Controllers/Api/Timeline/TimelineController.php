@@ -13,7 +13,7 @@ class TimelineController extends Controller
     {
         $graous = $request->user()
             ->graousFromFollowing
-            ->paginate(1);
+            ->paginate(5);
 
         return new GraouCollection($graous);
     }

@@ -1,26 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-{{--<div class="container">--}}
-{{--    <div class="row justify-content-center">--}}
-{{--        <div class="col-md-8">--}}
-{{--            <div class="card">--}}
-{{--                <div class="card-header">{{ __('Dashboard') }}</div>--}}
+    <div class="flex">
 
-{{--                <div class="card-body">--}}
-{{--                    @if (session('status'))--}}
-{{--                        <div class="alert alert-success" role="alert">--}}
-{{--                            {{ session('status') }}--}}
-{{--                        </div>--}}
-{{--                    @endif--}}
+        <div class="w-3/12">
 
-{{--                    {{ __('You are logged in!') }}--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
 
-    <example-component />
+        </div>
+
+
+        <div class="w-7/12 border border-gray-800 border-t-0 border-b-0">
+
+     <app-timeline />
+
+        </div>
+
+    </div>
 
 @endsection
